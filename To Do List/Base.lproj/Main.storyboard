@@ -91,7 +91,11 @@
                                 <action selector="cancelPressed:" destination="jJh-SX-J5Q" id="YHG-Lb-Y9K"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="df6-7d-Em1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="df6-7d-Em1">
+                            <connections>
+                                <segue destination="71N-yp-iwf" kind="unwind" identifier="UnwindFromSave" unwindAction="unwindFromDetailViewControllerWithSegue:" id="jbX-XT-rXd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="toDoField" destination="RWl-Ge-BQw" id="3Zr-Bw-qK5"/>
